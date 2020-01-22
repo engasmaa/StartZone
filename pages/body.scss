@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url("Assets/Css-Libraries/w3css.css");
+
+$section-padding-v:4% ;
+$section-padding-h:7% ;
+$Space-Between : 100px;
+
+
+$font-family  :  'Poppins', sans-serif;
+$Basic-color:#095284;
+$Basic-color-2:#F7FAFE;
+$Basic-color-3:#1B7DC1;
+$font-color:#707070;
+
+.DropDown_itm
+{
+    color: black;
+    border-bottom: 1px solid gray;
+} 
+
+@mixin MediaQuery($Size) {
+  @if $Size == xs {
+    @media (max-width: 575.98) {@content;}
+    }
+  @if $Size == s {
+    @media (min-width:  575.98 ) and  (max-width: 767.98px) {@content;}
+  }
+  @if $Size == M {
+      @media (min-width: 768px) and (max-width: 991.98px) {@content;}
+  }
+  @if $Size == L {
+      @media (min-width: 992px) and (max-width: 1199.98px) {@content;}
+  }
+  @if $Size == XL {
+      @media (min-width: 1200px) { @content; }
+  }
+//   *********************
+@if $Size == XL+L {
+    @media (min-width: 992px) { @content; }
+}
+@if $Size == xs+s {
+    @media (max-width: 767.98px) { @content; }
+}
+@if $Size == xs+s+M {
+    @media (max-width: 991.98px) { @content; }
+}
+}
+@mixin General-h {
+    color: $Basic-color;
+    text-decoration: uppercase ;
+  }
+  
+html,body
+{
+    width: 100%;
+    // height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: $font-family ;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+     
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #333333;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+  a {
+    text-decoration: none;
+    // color: red;
+  }
+  }
+.Unset{
+    all: unset; 
+}
+
+.Btn{
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  cursor: pointer;
+  background-color: #1B7DC1;
+  color: #FFFFFF;
+  padding: 0px 40px;
+  border: .2px solid #707070;    
+  border-radius: 23px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+p{
+    font-weight: 400;
+    color: black;
+    // margin-bottom: 60px;
+}
+
+.grid-2{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+}
+
+
+// .grid-3{
+    
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr ;
+//     grid-gap: 20px;
+// }
+@include MediaQuery(XL+L){
+    .grid-2{
+        // padding:$section-padding-v $section-padding-h ;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        img { 
+            width:80%;  
+        }
+        p{
+            padding-bottom: 0;
+        }
+    }
+    .grid-3{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 20px;
+    }
+}
+@include MediaQuery(M){
+    .grid-2{
+        // padding:$section-padding-v $section-padding-h ;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        img { 
+            width:80%;  
+        }
+        p{
+            padding-bottom: 0;
+        }
+    }
+    .grid-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr    ;
+        grid-gap: 20px;
+    }
+}
+@include MediaQuery(xs+s){
+    .grid-2{
+        // padding:$section-padding-v $section-padding-h ;
+        display: grid;
+        grid-template-columns:  1fr ;
+        img { 
+            width:80%;  
+        }
+        p{
+            padding-bottom: 0;
+        }
+    }
+    .grid-3{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-gap: 20px;
+    }
+}
+    // *************************************
+// input:not([type=submit]) , textarea  , .input_submit{
+//     width: 100%;
+//     padding: 10px ;
+  
+//     margin-bottom: 15px;
+//     line-height: 26px;
+//     font-size:14px;
+//     font-weight: 200;
+//     border: 1px solid #707070;
+//     border-radius: 23px;
+//     box-sizing: border-box;
+//     border-radius: 20px;
+//     padding: 5px;
+// }
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+::placeholder{
+    color: #747474;
+}
+// ***********************
+// .w3-bar-item {
+//     color: black !important;
+// }
+// .w3-button {
+//     color: black !important;
+// }
+.w3-bar-block .w3-bar-item  {
+    color: black !important;
+}
+// ***************** For Drop Down ***********************
+// .w3-card-4, .w3-hover-shadow:hover {
+//     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+// }
+// .w3-bar-block .w3-bar-item {
+//     width: 100%;
+//     display: block;
+//     padding: 8px 16px;
+//     text-align: left;
+//     border: none;
+//     white-space: normal;
+//     float: none;
+//     outline: 0;
+// }
+// w3-btn, .w3-button {
+//     -webkit-touch-callout: none;
+//     -webkit-user-select: none;
+//     -khtml-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+// }
+// .w3-dropdown-content {
+//     cursor: auto;
+//     color: #000;
+//     background-color: #fff;
+//     display: none;
+//     position: absolute;
+//     min-width: 160px;
+//     margin: 0;
+//     padding: 0;
+//     z-index: 1;
+// }
+// .w3-dropdown-click, .w3-dropdown-hover {
+//     position: relative;
+//     display: inline-block;
+//     cursor: pointer;
+// }

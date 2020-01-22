@@ -1,0 +1,30 @@
+body{
+    overflow: hidden;
+    /* box-sizing: border-box;
+    padding: 0;
+    margin: 0; */
+}
+.component-stert{
+    /* background:rgb(240, 241, 243) ; */
+    background: #ffffff;
+    /* background-size:100% 100%;  */
+
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    height: 100%; 
+    z-index: 10000;
+    
+}
+.component--intro{
+    width: 100%;
+    height: 100%; 
+    animation: sk-chase 5s infinite linear both;
+    display: grid;
+    justify-content: center;
+    /* background-color: red; */
+    align-items: center;
+    /* grid-gap: 0; */
+    
+}

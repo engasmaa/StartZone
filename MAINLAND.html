@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Zone</title>
+    <link rel="shortcut icon" href="../Assets/imgs/PNG/Icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f339a7c60b.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section class="Com-header  Com-header2 ">
+        <header>
+            <div class="logo2">
+                <a href="index.html"> <img src="Assets/imgs/PNG/logo2.png" alt=""></a> 
+            </div>
+           
+            <div class="MenuButton">
+                <input type="checkbox" id="MenuButton-btn" class="MenuButton-btn">
+                <label for="MenuButton-btn" id="MenuButton-lbl" class="MenuButton-lbl">
+                 <i class="fa fa-bars"  ></i>
+                </label>
+                <nav class="nav2">
+                    <a href="index.html"> Home </a>
+                    <a href="WhyUs.html"> Why US </a>
+                    <div class="w3-dropdown-hover">
+                        <a href="#"> Company SetUp  <i class="fas fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="color: black;">
+                            <a href="MAINLAND.html" class="w3-bar-item w3-button DropDown_itm " >MainLand</a>
+                            <a href="FreeZone.html" class="w3-bar-item w3-button" style="color: black;" >FreeZone </a>
+                            <a href="OFFSHORE.html" class="w3-bar-item w3-button" style="color: black;" >offshare</a>
+                        </div>
+                    </div>
+                    <a href="Services.html">Services</a>
+                    <a onclick="document.getElementById('id01').style.display='block'">contact Us</a>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <section class="sec-MAINLAND">
+        <div class="SecHeader">
+            <h1> MAINLAND - D.E.D. BUSINESS SETUP </h1>
+        </div>
+        <div class="mainland grid-2">
+            <img src="Assets/imgs/PNG/mainland.png" alt="MAINLAND - D.E.D. BUSINESS SETUP" srcset="">
+            <div class="mainland-text">
+                <h1> WHAT IS LLC </h1>
+                <p> 
+                    A Limited Liability Company (LLC) is the most common type of registration in the UAE and is recommended where the purpose of the entity is to make sales within the region. However, it should be noted that 100% foreign ownership of such an entity is not permitted. Under the UAE Commercial Companies Law (CCL), foreign investors are permitted to hold up to 49 per cent equity ownership in UAE companies and 51 per cent of the equity must be held at all times by one or more UAE nationals.
+                </p>
+                <p>
+                    In accordance with Article (218) of the CCL a Limited Liability Company can be formed by a minimum of 1 (as per Article 8 of the Federal Commercial Company Law of 2015) and a maximum of 50 shareholders whose liability is limited to their shares in the capital of the company. Recent amendments to Article (217) of the CCL that came into force in June 2009 removed the requirement for minimum share capital (previously AED 300,000 in Dubai and AED 150,000 in other Emirates) allowing founders of a limited liability company the freedom to determine the company’s shar
+                    e capital which could be less than the earlier prescribed bottom line.
+                </p>
+                <p> A LLC must appoint a minimum of one manager and up to a maximum of five managers for the business. Managers must be appointed by a Memorandum of Association or by a management contract, for a fixed term or an unlimited term. Unless the Memorandum of Association states otherwise, the manager has full powers of administration and management of the LLC. LLC is not allowed to practice its activities in the UAE without a Trade License and Commercial Registration Certificate.</p>
+                <a href="#" class="Btn"> SCHEDULE A CALL </a>
+            </div>
+        </div>
+    </section> 
+
+    <section class="com-contactUs  grid-2  " id="com-contactUs">
+        <div class="ContactInfo">
+            <h1 class="ContactInfo" > Contact Info :  </h1>
+            <p>
+                Startzone offers complete business setup solutions under one roof. We make sure that all your needs are catered to without wasting your precious time at the right price. 
+            </p>
+            <pre>
+Address:  10111 Santa Monica Boulevard, LA
+Phone:  +44 987 065 908
+Email:  info@Example.com
+Fax:  +44 987 065 909
+            </pre>
+            
+        
+        </div>
+        <div class="contact-subscribe">
+            <h1> Subscribe,To get lastest news.. </h1>
+
+                <form action="#" method="POST">
+                    <div class="subscribe">
+                        <input type="email" name="emailaddress" placeholder="Enter your mail"> 
+                        <div class="input-container">
+                            <input type="submit" class="Unset ss " value=""  >
+                        </div>
+                    </div>
+                </form>
+            <div class="icons">
+                <a href="#"> <i class="fab fa-facebook"></i></a>
+                <a href="#"> <i class="fab fa-twitter-square"></i></a>
+                <a href="#"> <i class="fab fa-dribbble"></i></a>
+                <a href="#"> <i class="fab fa-behance"></i></a>
+                <a href="#"> <i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </section> 
+
+    <div class="w3-container">
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                <div class="inputs">
+                    <img src="Assets/imgs/PNG/logo.png" alt="" srcset="">
+    
+                    <form action="#"  method="POST">
+                        <input type="text" placeholder="Your Name"  id="name" name="name"/>
+                        <input type="text" placeholder="Your Email" id="Email" name="Email" />
+                        <input type="text" placeholder="Your Mobile" id="Mobile" name="Mobile" />
+                    
+                        <textarea placeholder="Your Comment" ></textarea>
+                        <input type="submit" id="Btn-Msg" 
+                        name="Btn-Msg" value ="SEND MASSAGE" class="Btn Unset "/>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

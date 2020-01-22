@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Zone</title>
+    <link rel="shortcut icon" href="Assets/imgs/PNG/Icon.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/f339a7c60b.js"></script>
+    <!--   For Slider  -->
+    <link rel="stylesheet" href="Assets/Css-Libraries/swiper.css">
+    <script src="Assets/js/swiper.min.js"></script>
+    
+    <link rel="stylesheet" href="Assets/Css-Libraries/loading.css">
+    <link rel="stylesheet" href="Assets/Css-Libraries/animate.min.css">
+    <!-- for international tel  -->
+    <link rel="stylesheet" href="Assets/Css-Libraries/demo.css">
+    <link rel="stylesheet" href="Assets/Css-Libraries/intlTelInput.css">
+    <link rel="stylesheet" href="./Style.css">
+    <style>
+        .animated {
+            -webkit-animation-duration:3s;
+            -moz-animation-duration: 3s;
+            animation-duration:3s;
+        }
+        
+        .delay {
+            -animation-delay: 2s;
+        }
+    </style>  
+</head>
+<body>
+     <!-------------------------start-loading-pag------------------------->
+     <div class="component-stert">
+        <div class="component--intro status--loaded">
+            <img src="./Assets/imgs/PNG/logo.png" alt="">
+        </div>
+    </div>
+    <!---------------------------end-loading-pag------------------------->
+    <!---------------------------------------   header -------------------------------------------->
+    <section class="Com-header">
+        <header>
+            <div class="logo">
+                <a href="index.html" ><img src="Assets/imgs/PNG/logo.png" alt=""  class="Logoo1" ></a> 
+                <a href="index.html" ><img src="Assets/imgs/PNG/logo2.png" alt="" class="Logoo2"></a> 
+            </div>
+            <div class="MenuButton">
+                <input type="checkbox" id="MenuButton-btn" class="MenuButton-btn">
+                <label for="MenuButton-btn" id="MenuButton-lbl" class="MenuButton-lbl">
+                     <i class="fa fa-bars"  ></i>
+                </label>
+                <nav>
+                    <a href="index.html" class="a1"> Home </a>
+                    <a href="WhyUs.html" class="a2"> Why US </a>
+                    <div class="w3-dropdown-hover">
+                        <a href="#"> Company SetUp  <i class="fas fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="color: black;">
+                        <a href="MAINLAND.html" class="w3-bar-item w3-button DropDown_itm " >MainLand</a>
+                        <a href="FreeZone.html" class="w3-bar-item w3-button" style="color: black;" >FreeZone </a>
+                        <a href="OFFSHORE.html" class="w3-bar-item w3-button" style="color: black;" >offshare</a>
+                        </div>
+                    </div>
+                    <!-- class="w3-button w3-black" -->
+                    <a href="Services.html">Services</a>
+                    <a onclick="document.getElementById('id01').style.display='block'">contact Us</a>
+                </nav>
+            </div>
+        </header>
+        <div class="header">
+            <div class="Com-header-text">
+                <h1>We have everything your company needs to grow </h1>
+                <p> Start zone guarantees you professional & consistent services that you need to
+                    structure and effectively conduct your business in the United Arab Emirates
+                </p>
+            </div>
+
+            <form action="https://www.google.com/">
+                <p> Request Free Consultation</p>
+                <input id="phone" name="phone" type="tel" class="input-width">
+                <br/>
+                <button type="submit" class="Unset">
+                    <img src="./Assets/imgs/PNG/Submit.png"/>
+                </button>
+            </form>
+            <div class="Social">
+                <a class="icon" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>     
+                <a class="icon" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+ <!-- -----------------------  contactUs-modal ------------------------------ -->
+    <div class="w3-container">
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+        <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <div class="inputs">
+                <img src="Assets/imgs/PNG/logo.png" alt="" srcset="">
+
+                <form action="#"  method="POST">
+                    <input type="text" placeholder="Your Name"  id="name" name="name"/>
+                    <input type="text" placeholder="Your Email" id="Email" name="Email" />
+                    <input type="text" placeholder="Your Mobile" id="Mobile" name="Mobile" />
+                
+                    <textarea placeholder="Your Comment" ></textarea>
+                    <input type="submit" id="Btn-Msg" 
+                    name="Btn-Msg" value ="SEND MASSAGE" class="Btn Unset "/>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+     <!-- -----------------------  Request Free Cnsultion -modal ------------------------------ -->
+     <div class="w3-container FreeRequest">
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content">
+            <div class="w3-container">
+                <!-- onclick="document.getElementById('id02').style.display='none'" -->
+                <span 
+                class="w3-button w3-display-topright">&times;</span>
+                <div class="inputs">
+                    <img src="Assets/imgs/PNG/logo.png" alt="" srcset="">
+    
+                    <form action="#"  method="POST">
+                        <p> get free consultation (A 30 min call)
+                            fill the following form and we will contact you soon</p>
+                        <input type="text" placeholder="Your Name"  id="Name" name="Name"/>
+                        <input type="text" placeholder="Your Mobile" id="Mobile" name="Mobile" />
+                        <input type="text" placeholder="Your BUSINESS" id="Business" name="Business" />
+                       
+                        <input type="submit" id="Btn-Msg" 
+                        name="Btn-Msg" value ="SEND MASSAGE" class="Btn Unset "/>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+     <!---------------------------------------   QuickLinks -------------------------------------------->
+    <section class="Com-QuickLinks">
+        <h1> Quick links </h1>
+        <a href="#"> <span> BANK ACCOUNT </span> </a>
+        <a href="#"> <span> DIGITAL PORTFOLIO  </span></a>
+        <a href="#"> <span> FINANCIAL SERVICES  </span></a>
+        <a href="#"> <span> IT Solutions  </span></a>
+        <a href="#"> <span> Interior Design  </span></a>
+
+        <a href="#"> <span> VAT REGISTRATION </span></a>
+        <a href="#"> <span> ACCOUNTING   </span></a>
+        <a href="#"> <span> FEASIBILITY STUDY </span></a>
+        <a href="#"> <span> CCTV & security camera  </span></a>
+        <a href="#"> <span> RELOCATION SERVICES </span></a>
+    </section>
+    <!---------------------------------------   WhyUs -------------------------------------------->
+    <section class="Com-WhyUs ">
+
+        <div class="SecHeader">
+            <h1> Why Us </h1>
+        </div>
+        <div class="grid-2">
+            <div class="WhyUsVideo">
+                <div class="video-play" id="video-play"></div>
+                
+                <video id ="exampleVideo">
+                    <source src="Assets/Video/vv.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="WhyUsText">
+            
+                <p> 
+                    Startzone offers complete business setup solutions under one roof. We make sure that all your needs are catered to without wasting your precious time at the right price.  
+                </p>
+                <span> Professional </span>
+                <p> We provide professional consultancy and complete business set up </p>
+                <span>INTEGRITY </span>
+                <p>SUCCESS WITHOUT INTEGRITY MEANS NOTHING </p>
+                <p> Startzone offers complete business setup solutions under one roof. We make sure that all your needs are catered to without wasting your precious time at the right price.
+                    It all began as a dream for two young men wanting to start their own business, taking many risks and trying to avoid many obstacles.
+                </p>
+                <a href="#"><img  src="Assets/imgs/PNG/PlayButton.png" alt="Start Zone" class="ReadMore-btn"></a>
+
+            </div>
+        </div>
+    </section>
+   <!---------------------------------------   CompanySetUp -------------------------------------------->
+    <div class="Com-CompanySetUp grid-2">
+        <div class="CompanySetUp_text">
+            <h1> Company SetUp</h1>
+            <p> We can guide you along the path and help with all aspects. 
+                We provide complete business setup solutions through the perfect
+                 business suite . </p>
+        </div>
+        
+        <div class=CompanySetUp_imgs>
+            <a href="FreeZone.html">
+                <img src="Assets/imgs/PNG/1.png" alt="" srcset="">
+                <div class="Text">
+                    <h1>FREEZONE</h1> <h1>BUSINESS SETUP</h1>
+                    <p> Establishing a business entity in one of the UAE's many Free trade zones (FTZs) can be an attractive option for foreign investors </p>
+                </div>
+            </a>
+            <a href="OFFSHORE.html">
+                <img src="Assets/imgs/PNG/2.png" alt="" srcset="">
+                <div class="Text">
+                    <h1>OFFSHORE</h1> <h1>BUSINESS SETUP</h1>
+                    <p> UAE Offshore company registration is a very popular method of doing business in the Middle East region.
+                        </p>
+                </div>
+            </a>
+            <a href="MAINLAND.html">
+                <img src="Assets/imgs/PNG/3.png" alt="" srcset="">
+                <div class="Text">
+                    <h1>MAINLAND</h1> <h1>BUSINESS SETUP</h1>
+                    <p>A Limited Liability Company (LLC) is the most common type of registration in the UAE and is recommended where the purpose of the entity is to make sales within the region. </p>
+                  </div>
+            </a>
+        </div>
+    </div>
+    <!---------------------------------------   Why Dubai  slider -------------------------------------------->
+    <section class="sec-whyus  ">
+        <div class="SecHeader">
+            <h1> why </h1>
+            <h1>Dubi ? </h1>
+        </div>
+
+        <div class="swiper-container" >
+            <div class="swiper-wrapper" >
+                <div class="swiper-slide  grid-2">
+                    <div class="Slider-Img">
+                        <img src="Assets/imgs/PNG/WhyUs-Slider1.png" alt="">
+                    </div>
+                    <div class="Slider-Text">
+                        <h1> WORLD CLASS AIRPORTS WITH  ALL THE FACILITIES & ADVANCED TELECOMMUNICATION </h1>
+                        <p>
+                            Direct flights to all parts of the world as the UAE is characterized by a geographical location The most advanced telecommunication in the region and the world 
+
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide  grid-2">
+                    <div class="Slider-Img">
+                        <img src="Assets/imgs/PNG/WhyUs-Slider1.png" alt="">
+                    </div>
+                    <div class="Slider-Text">
+                        <h1> ASASA </h1>
+                        <p>
+                           ASASAS
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav" style="direction: rtl;">
+                <a href="" class="swiper-button-next">  
+                    <img src="Assets/imgs/PNG/Right.png" alt="" srcset=""> 
+                </a>
+                <a href="" class="swiper-button-prev">  
+                    <img src="Assets/imgs/PNG/Left.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------   client slider   -------------------------------------------->
+    <section class="sec-client">
+        <div class="SecHeader">
+            <h1> Happy Clients Say </h1>
+        </div>
+
+        <div class="swiper-container" >
+            <div class="swiper-wrapper" >
+                <div class="swiper-slide  grid-2">
+                    <div class="Slider-Img">
+                        <img src="Assets/imgs/PNG/Client1.png" alt="">
+                    </div>
+                    <div class="Slider-Text">
+                        <p>
+                            Direct flights to all parts of the world as the UAE is characterized by a geographical location The most advanced telecommunication in the region and the world 
+                        </p>
+                        <h6><strong>Matilda joyce </strong></h6>
+                        <h6> Doctor</h6>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide  grid-2">
+                    <div class="Slider-Img">
+                        <img src="Assets/imgs/PNG/Client1.png" alt="">
+                    </div>
+                    <div class="Slider-Text">
+                        <p>
+                            Direct flights to all parts of the world as the UAE is characterized by a geographical location The most advanced telecommunication in the region and the world 
+                        </p>
+                        <h6><strong>Matilda joyce </strong></h6>
+                        <h6> Doctor</h6>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="nav" style="direction: rtl;">
+                <a href="" class="swiper-button-next">  
+                    <img src="Assets/imgs/PNG/Right.png" alt="" srcset=""> 
+                </a>
+                <a href="" class="swiper-button-prev">  
+                    <img src="Assets/imgs/PNG/Left.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!---------------------------------------  contact us  -------------------------------------------->
+    <section class="com-contactUs  grid-2  " id="com-contactUs">
+        <div class="ContactInfo">
+            <h1 class="ContactInfo" > Contact Info :  </h1>
+            <p>
+                Startzone offers complete business setup solutions under one roof. We make sure that all your needs are catered to without wasting your precious time at the right price. 
+            </p>
+            <pre>
+Address:  10111 Santa Monica Boulevard, LA
+Phone:  +44 987 065 908
+Email:  info@Example.com
+Fax:  +44 987 065 909
+            </pre>
+            
+        
+        </div>
+        <div class="contact-subscribe">
+            <h1> Subscribe,To get lastest news.. </h1>
+
+                <form action="#" method="POST">
+                    <div class="subscribe">
+                        <input type="email" name="emailaddress" placeholder="Enter your mail" class="subscribe-mail"> 
+                        <div class="input-container">
+                            <input type="submit" class="Unset ss " value=""  >
+                        </div>
+                    </div>
+                </form>
+           
+
+            <div class="icons">
+                <a href="#"> <i class="fab fa-facebook"></i></a>
+                <a href="#"> <i class="fab fa-twitter-square"></i></a>
+                <a href="#"> <i class="fab fa-dribbble"></i></a>
+                <a href="#"> <i class="fab fa-behance"></i></a>
+                <a href="#"> <i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </section>    
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Assets/js/lodeing.js"></script>
+<script src="Assets/js/intlTelInput.js"></script>
+
+<script>
+// ******************VIDEO*****************************
+
+var myVideo = document.getElementById('exampleVideo');
+
+$(".WhyUsVideo").on('click',function () {
+    // debugger;
+        if (myVideo.paused){
+        $("#video-play").hide();
+        myVideo.play();
+        console.log('Video Playing');
+        } 
+        else {
+        myVideo.pause();
+        $("#video-play").show();
+        console.log('Video Paused');
+        }
+    });
+// ******************SLIDER*****************************
+   var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+// *******************ANIMATION AND LOADING *******************************
+
+$(document).ready(function(){
+
+    $(window).scroll(function () {
+     
+    if ($(window).scrollTop() >= 1500   ){
+        // debugger;
+        $('.CompanySetUp_imgs a:first-child ').addClass('animated fadeInLeft ');
+        $('.CompanySetUp_imgs a:nth-child(2)').addClass('delay animated fadeInRight');
+        $('.CompanySetUp_imgs a:nth-child(3)').addClass('delay animated fadeInLeft');
+    }
+});
+// ********************************************************************
+    'use strict';
+    var windoh = $(window).height();
+    $('body').height(windoh);
+
+   $(".component-stert  .component--intro ").fadeOut(2000,function()
+     {
+         $(this).parent().fadeOut(1000,function(){
+         $("body").css("overflow","auto");
+         $(this).remove();
+         $('body').height("100%");
+     });
+   }
+    );
+// ********************************************************************
+  $('.Com-header-text ').addClass('animated fadeInLeft ');
+  $('.component-stert   .component--intro img').addClass('animated bounce ');
+// ********************************************************************
+
+setTimeout(function() {
+    // debugger;
+    $('#id02').fadeIn(100,function (){
+        $('#id02').addClass('w3-show');
+    })
+}, 5000);
+
+});
+
+$( ".w3-button" ).click(function() {
+    $('#id02').removeClass('w3-show');
+    $('#id02').hide()
+});
+// ************************international phone *********************
+var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "Assets/js/utils.js",
+    });
+
+</script>

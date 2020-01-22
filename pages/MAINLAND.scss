@@ -1,0 +1,31 @@
+@import "../body";
+
+.sec-MAINLAND{
+    padding:$section-padding-v $section-padding-h ;
+    .SecHeader{
+        h1{
+            width: 40%;
+            padding-bottom: 50px;
+        }
+    }
+   .mainland{
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+    //    grid-gap: 10px;
+       h1{
+        @include  General-h ;
+        font-weight:600 ;
+        }
+
+       img {
+           width: 94%;
+       }
+       p{
+            margin-bottom: 0;
+       }
+       a{
+           margin-top: 20px;
+       }
+
+   }
+}
